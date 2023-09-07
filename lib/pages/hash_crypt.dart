@@ -36,6 +36,7 @@ class _HashcryptState extends ConsumerState<Hashcrypt> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -60,10 +61,12 @@ class _HashcryptState extends ConsumerState<Hashcrypt> {
               sm: 80,
               md: 100,
               lg: 120,
+              xl: 150,
             ),
-            onTapAnimation: false,
+            maxParticleSize: 8,
+            onTapAnimation: true,
             speedOfParticles: 4,
-            enableHover: false,
+            enableHover: true,
             isRandSize: true,
           ),
           ListView(
